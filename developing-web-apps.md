@@ -19,6 +19,20 @@
 - Group has Server Actions
 # Data Modeling 14% (7)
 ## Entities & Data Types 8% (4)
+### Entities
+- Entity = Database Table
+- Instance = Database Table Row
+- Attribute = Database Table Column
+- Id Attribute - Primary Key
+- Entity Actions - CRUD
+- CreateOrUpdate, GetForUpdate
+### Static Entities
+- Record (Attribute values) defined at design time
+- Cannot be created, updated or deleted (only Get Action) 
+- Used like Enumerations
+- 4 automatically created attributes - Id, Label, Order, Is Active
+- Attributes can be changed, added
+- Referenced by Record Name - Entities.&lt;StaticEntity&gt;.&lt;RecordName&gt;
 ## Data Relationships 6% (3)
 # Aggregates & SQL Queries 16% (8)
 ## Designing Aggregates & SQL Queries 12% (6)
